@@ -1,3 +1,6 @@
+package gorandomua
+
+const uaData = `
 [
   {
     "folder": "/Browsers - Windows/Legacy Browsers",
@@ -16777,3 +16780,5 @@
     "cpuArchitecture": ""
   }
 ]
+`
+

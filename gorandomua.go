@@ -3,7 +3,6 @@ package gorandomua
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"math/rand"
 	"time"
@@ -20,9 +19,7 @@ var uaCache []userAgent
 func getData()  *[]userAgent {
 	if uaCache == nil{
 		rand.Seed(time.Now().UnixNano())
-		raw, err := ioutil.ReadFile("./data.json")
-		guard(err)
-		json.Unmarshal(raw, &uaCache)
+		json.Unmarshal([]byte(uaData), &uaCache)
 	}
 
 	return &uaCache
