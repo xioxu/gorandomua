@@ -1,5 +1,5 @@
 # gorandomua
-Random user agent for golan ( inspired by random-useragent lib in Node.js )
+Random user agent for golang ( inspired by random-useragent lib in Node.js )
 
 ## Installation
 
